@@ -1,5 +1,24 @@
 # Introducción a la bioinformática
 
+## Instalación
+
+```
+python3 -m pip install --user virtualenv
+python3 -m virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+```
+
+## Ejecución
+
+```
+source env/bin/activate
+python src/exn.py 
+```
+Donde n es el numer de ejercicio
+
+Todo los archivos se encuentran en la carpeta files. 
+
 ## Ejercicio 1 – PROCESAMIENTO DE SECUENCIAS.
 
 Escribir un script que lea una o más secuencias (de nucleótidos) de un archivo que contenga la información en formato GenBank de un mRNA de su gen (o genes) de interés, las traduzca a sus secuencias de amino ácidos posibles (tener en cuenta los Reading Frames) y escriba los resultados en un archivo en formato FASTA. Ustedes deben generarse su archivo GenBank de secuencias input, por ejemplo realizando una consulta de los mRNA del gen INS (que está asociado a la Diabetes) en la base de datos de NCBI-Gene y obtener uno o más resultados en formato
