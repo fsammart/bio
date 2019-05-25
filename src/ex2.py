@@ -41,15 +41,18 @@ blast_records = NCBIXML.parse(result_handle)
 if os.path.exists(sys.argv[2]):
   os.remove(sys.argv[2])
 
-
 for blast_record in blast_records:
 	for alignment in blast_record.alignments:
-	     for hsp in alignment.hsps:
-	            with open(sys.argv[2], "a") as f:
-		            print("****Blast Result****", file=f)
-		            print("sequence:", alignment.title, file = f)
-		            print("length:", alignment.length, file = f)
-		            print("e value:", hsp.expect, file = f)
-		            print(hsp.query[0:75] + "...", file = f)
-		            print(hsp.match[0:75] + "...", file = f)
-		            print(hsp.sbjct[0:75] + "...", file = f)
+		for hsp in alignment.hsps:
+			with open(sys.argv[2], "a") as f:
+			   print("****Blast Result****", file=f)
+			   print("sequence:", alignment.title, file = f)
+			   print("length:", alignment.length, file = f)
+			   print("e value:", hsp.expect, file = f)
+			   print("gaps:", hsp.gaps, file = f)
+			   print("identities:", hsp.identities, file = f)
+			   print("positives:", hsp.positives, file = f)
+			   print("score:", hsp.score, file = f)
+			   print(hsp.query[0:75] + "...", file = f)
+			   print(hsp.match[0:75] + "...", file = f)
+			   print(hsp.sbjct[0:75] + "...", file = f)
