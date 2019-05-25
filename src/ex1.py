@@ -21,17 +21,20 @@ records = SeqIO.parse(in_file_name, "gb")
 
 for record in records:
 	record_str = str(record.seq)
-
+	rev_record_str = str(record.seq.reverse_complement())
 	startP = re.compile('ATG')
 	nuc = record_str.replace('\n','')
-	rec = Seq(nuc)
+	rev_nuc = rev_record_str.replace('\n','')
 	longest = (0,)
-	for m in startP.finditer(nuc, overlapped=True):
-	    if len(rec[m.start():].translate(to_stop=True)) > longest[0]:
-	        pro = rec[m.start():].translate(to_stop=True)
-	        longest = (len(pro),str(pro))
+	for seq in nuc, rev_nuc:
+		for m in startP.finditer(seq, overlapped=True):
+			rec = Seq(seq)
+			print(rec[m.start():].translate(to_stop=True))
+			if len(rec[m.start():].translate(to_stop=True)) > longest[0]:
+				pro = rec[m.start():].translate(to_stop=True)
+				longest = (len(pro),str(pro))
 
 	protein_record = SeqRecord(Seq(longest[1], IUPAC.protein), id=record.id, description= record.description + " protein translation")
 
 	with open(out_file_name, "a") as output_handle:
-	    SeqIO.write(protein_record, output_handle, "fasta")
+		SeqIO.write(protein_record, output_handle, "fasta")
