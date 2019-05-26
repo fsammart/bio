@@ -29,7 +29,6 @@ for record in records:
 	for seq in nuc, rev_nuc:
 		for m in startP.finditer(seq, overlapped=True):
 			rec = Seq(seq)
-			print(rec[m.start():].translate(to_stop=True))
 			if len(rec[m.start():].translate(to_stop=True)) > longest[0]:
 				pro = rec[m.start():].translate(to_stop=True)
 				longest = (len(pro),str(pro))
