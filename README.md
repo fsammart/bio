@@ -42,6 +42,14 @@ Parametros:
 --local: indica que la consulta se realiza con una base de datos swissprot local
 --online: indica que la consulta se realiza online
 
+NOTA: Para correr en modo local, se debera bajar la base de datos de Swissprot a traves del siguiente link:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download
+
+Descomprimir en el mismo directorio src/ del ejercicio y luego ejecutar:
+```
+ makeblastdb -in swissprot -dbtype prot
+ ```
+
 Ejemplo:
 
 ```
