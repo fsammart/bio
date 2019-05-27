@@ -11,36 +11,64 @@ pip install -r requirements.txt
 
 ## Ejecución
 
+Primero correr:
 ```
 source env/bin/activate
-python src/exn.py 
 ```
-Donde n es el numer de ejercicio
+Luego, según el ejercicio:
 
-Todo los archivos se encuentran en la carpeta files. 
+# Ejercicio 1:
 
-## Ejercicio 1 – PROCESAMIENTO DE SECUENCIAS.
+```
+python src/ex1.py [archivo.gbk] [archivo.fasta]
+```
+Reemplazar [archivo.gbk] por el archivo que se quiere traducir. El resultado estará en [archivo.fasta]
 
-Escribir un script que lea una o más secuencias (de nucleótidos) de un archivo que contenga la información en formato GenBank de un mRNA de su gen (o genes) de interés, las traduzca a sus secuencias de amino ácidos posibles (tener en cuenta los Reading Frames) y escriba los resultados en un archivo en formato FASTA. Ustedes deben generarse su archivo GenBank de secuencias input, por ejemplo realizando una consulta de los mRNA del gen INS (que está asociado a la Diabetes) en la base de datos de NCBI-Gene y obtener uno o más resultados en formato
-GenBank en un archivo de texto. Si no desean seguir trabajando con las seis secuencias de aa posibles, pueden utilizar alguna función o programa que les permita saber cual el es marco de lectura correcto y seguir con esa secuencia.
-NOTA: Ver aclaración de este ejercicio al final del documento.
-- Input: Archivo de secuencias Genbank (ej. NMxxxx.gbk con una o más secuencias).
-- Output: Archivo de secuencias Fasta de cada ORF (ej. Xxxxx.fas con una o más secuencias de
-aminoácidos).
+Ejemplo:
 
-## Ejercicio 2.a - BLAST. 
+```
+python src/ex1.py BRCA2.gbk salida.fasta
+```
+El comando anterior traduce el archivo BRCA2.gbk y deja el resultado en el archivo salida.fasta
 
-Escribir un script que realice un BLAST de una o varias secuencias (si son varias se realiza un Blast por cada secuencia input) y escriba el resultado (blast output) en un archivo. 
-Nota: Pueden ejecutar BLAST de manera remota o bien localmente (si hacen ambos tienen más puntos!),
-para esto deben instalarse BLAST localmente del FTP del NCBI, luego bajarse la base de datos ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/swissprot.gz y descomprimirla en un dir por ej. ncbi-blast-2.9.0+/data/, luego usar el comando ncbi-blast-2.9.0+/bin/makeblastdb sobre el archivo swissprot (el original ya está en formato FASTA) para darle formato de BLAST DB. Dependiendo de la versión de Blast suite que tengan instalado puede que en vez de makeblastdb deban utilizar el comando formatdb.
-- Input: Secuencia Fasta (ej. Xxxx.fas con una o más secuencias de aminoácidos obtenidas en Ej.1).
-- Output: Reporte Blast (ej. blast.out, si deciden hacer múltiples pueden generar un único o varios
-archivos).
+# Ejercicio 2:
 
-## Ejercicio 2.b – Interpretación del resultado del Blast. 
+```
+python src/ex2.py [archivo.fasta] [archivo.out] [--prot o --nuc] [--local o --online]
+```
+Parametros:
+--prot: indica que es una secuencia de aminoacidos y por lo tanto se realiza un blastp
+--nuc: indica que la secuencia es de nucleotidos y por lo tanto se realiza un blast
+--local: indica que la consulta se realiza con una base de datos swissprot local
+--online: indica que la consulta se realiza online
 
-Dar una explicación del resultado Blast obtenido en términos de las secuencias encontradas y dar una explicación sobre que significan los valores estadísticos asociados a las secuencias encontradas (el capítulo 4 del libro de David Mount puede ayudarlos).
+Ejemplo:
 
-## Ejercicio 3 – Multiple Sequence Alignment (MSA).
+```
+python src/ex2.py salida.fasta blast.out --prot --online
+```
 
-Descargar las secuencias (en formato fasta) de 3 o más organismos distintos (otras especies) que hayan salido en los resultados del Blast. Generar un archivo multifasta con estas secuencias más su secuencia query y realizar un alineamiento múltiple con la secuencia de consulta más estas otras encontradas. Si no pueden hacerlo localmente pueden utilizar algún programa de MSA online. Intenten realizar una interpretación del resultado del alineamiento múltiple. Entregar información del MSA (el capítulo 5 del libro de David Mount puede ayudarlos).
+El comando anterior ejecuta un blastp sobre la secuencia de aminoacidos que se encuentra en [salida.fasta] y deja el resultado en el archivo [blast.out]. El --online especifica que la consulta blast se realice online.
+
+
+# Ejercicio 3:
+
+```
+python src/ex3.py [archivo.fasta] [archivo.out] 
+```
+Reemplazar [archivo.fasta] por el archivo con las secuencias que se quiere alinear. El resultado estará en [archivo.out]
+
+Ejemplo:
+
+```
+python src/ex3.py archivo.fasta alignment.out
+```
+
+El comando anterior realiza un alineamiento multiple de las secuencias que se encuentren en archivo.fasta y deja el resultado en alignment.out
+
+
+
+
+
+
+
