@@ -1,0 +1,110 @@
+****Blast Result****
+sequence: sp|P51587.3| RecName: Full=Breast cancer type 2 susceptibility protein; AltName: Full=Fanconi anemia group D1 protein [Homo sapiens]
+length: 3418
+e value: 0.0
+gaps: 0
+identities: 3418
+positives: 3418
+score: 18331.0
+MPIGSKERPTFFEIFKTRCNKADLGPISLNWFEELSSEAPPYNSEPAEESEHKNNNYEPNLFKTPQRKPSYNQLA...
+MPIGSKERPTFFEIFKTRCNKADLGPISLNWFEELSSEAPPYNSEPAEESEHKNNNYEPNLFKTPQRKPSYNQLA...
+MPIGSKERPTFFEIFKTRCNKADLGPISLNWFEELSSEAPPYNSEPAEESEHKNNNYEPNLFKTPQRKPSYNQLA...
+****Blast Result****
+sequence: sp|Q864S8.2| RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Felis catus]
+length: 3372
+e value: 0.0
+gaps: 136
+identities: 2344
+positives: 2717
+score: 11513.0
+MPIGSKERPTFFEIFKTRCNKADLGPISLNWFEELSSEAPPYNSEPAEESEHKNNNYEPNLFKTPQRKPSYNQLA...
+MPIG KERPTFFEIF+TRCNKADLGPISLNWFEEL  EAPPYNSEP EES +K + YEPNLFKTPQRKP + QLA...
+MPIGCKERPTFFEIFRTRCNKADLGPISLNWFEELCLEAPPYNSEPTEESGYKIS-YEPNLFKTPQRKPCH-QLA...
+****Blast Result****
+sequence: sp|P97929.2| RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Mus musculus]
+length: 3329
+e value: 0.0
+gaps: 163
+identities: 1968
+positives: 2414
+score: 8915.0
+MPIGSKERPTFFEIFKTRCNKADLGPISLNWFEELSSEAPPYNSEPAEESEHKNNNYEPNLFKTPQRKPSYNQLA...
+MP+  K RPTF+EIFK RC+ ADLGPISLNWFEELSSEAPPYNSEP EESE+K + YEP LFKTPQR P Y+Q A...
+MPVEYKRRPTFWEIFKARCSTADLGPISLNWFEELSSEAPPYNSEPPEESEYKPHGYEPQLFKTPQRNPPYHQFA...
+****Blast Result****
+sequence: sp|O35923.1| RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Rattus norvegicus]
+length: 3343
+e value: 0.0
+gaps: 161
+identities: 1938
+positives: 2412
+score: 8856.0
+MPIGSKERPTFFEIFKTRCNKADLGPISLNWFEELSSEAPPYNSEPAEESEHKNNNYEPNLFKTPQRKPSYNQLA...
+M +  K RPTF+EIFK RC+ ADLGPISLNWFEEL SEAPPYN+E  EESE+K   +EP LFKTPQR PSY+Q A...
+MTVEYKRRPTFWEIFKARCSTADLGPISLNWFEELFSEAPPYNTEHPEESEYKPQGHEPQLFKTPQRNPSYHQFA...
+****Blast Result****
+sequence: sp|Q7Y1C4.1| RecName: Full=Protein BREAST CANCER SUSCEPTIBILITY 2 homolog B; Short=AtBRCA2B [Arabidopsis thaliana]
+length: 1155
+e value: 1.13851e-55
+gaps: 90
+identities: 175
+positives: 274
+score: 555.0
+PRISLKAAVGGQVPSACSHKQLYTYGVSKHCIKINSKNAESFQFHTEDYFGKESLWTGKGIQLADGGWLIPSNDG...
+PR+ +K   G   P+A +        V  H  +I S NA+ + F  E                        S+  ...
+PRVYIKEFFGMH-PTATTRMDY----VPDHVRRIKSSNADKYVFCDE------------------------SSSN...
+****Blast Result****
+sequence: sp|Q7Y1C4.1| RecName: Full=Protein BREAST CANCER SUSCEPTIBILITY 2 homolog B; Short=AtBRCA2B [Arabidopsis thaliana]
+length: 1155
+e value: 0.0924908
+gaps: 16
+identities: 35
+positives: 67
+score: 98.0
+FETSDTFFQTASGKNISVAKESFNKIVNFFDQKPEELHNFSLNSELHSDIRKNKMDIL-SYEETD--IVKHKILK...
+F   ++ FQTAS K ++V+     +       + ++L+ F+  ++  S ++++    L ++EE D  +VKH    ...
+FGVPNSLFQTASNKKVNVSSAGLARAKALLGLEEDDLNGFNHVNQSSSSLQQHGWSGLKTHEEFDATVVKHH---...
+****Blast Result****
+sequence: sp|Q7Y1C5.1| RecName: Full=Protein BREAST CANCER SUSCEPTIBILITY 2 homolog A; Short=AtBRCA2A [Arabidopsis thaliana]
+length: 1151
+e value: 2.20753e-54
+gaps: 78
+identities: 169
+positives: 270
+score: 544.0
+PRISLKAAVGGQVPSACSHKQLYTYGVSKHCIKINSKNAESFQFHTEDYFGKESLWTGKGIQLADGGWLIPSNDG...
+PR+ +K   G   P+A +        V  H  +I S NA+ + F  E                        S+  ...
+PRVYIKDFFGMH-PTATTRMDY----VPDHVRRIKSSNADKYVFCDE------------------------SSSN...
+****Blast Result****
+sequence: sp|Q7Y1C5.1| RecName: Full=Protein BREAST CANCER SUSCEPTIBILITY 2 homolog A; Short=AtBRCA2A [Arabidopsis thaliana]
+length: 1151
+e value: 0.155816
+gaps: 8
+identities: 35
+positives: 64
+score: 96.0
+FETSDTFFQTASGKNISVAKESFNKIVNFFDQKPEELHNFS-LNSELHSDIRKNKMDILSYEETD--IVKHKILK...
+F  S++ FQTAS K ++V+     +       + ++L+ F+ +N    S  +     + ++EE D  +VKH    ...
+FGVSNSLFQTASNKKVNVSSAGLARAKALLGLEEDDLNGFNHVNQSSSSSQQHGWSGLKTHEEFDATVVKH----...
+****Blast Result****
+sequence: sp|Q5HM10.1| RecName: Full=50S ribosomal protein L24 [Staphylococcus epidermidis RP62A] >sp|Q8CRH1.1| RecName: Full=50S ribosomal protein L24 [Staphylococcus epidermidis ATCC 12228]
+length: 105
+e value: 2.80844
+gaps: 0
+identities: 16
+positives: 23
+score: 78.0
+DEKIKEPTLLGFHTASGKKVKIAKESLDKVK...
+D K  EPT +G+ T  GKKV+IAK+S +++K...
+DPKTNEPTRVGYKTVDGKKVRIAKKSGEEIK...
+****Blast Result****
+sequence: sp|A4QJH4.1| RecName: Full=Protein TIC 214; AltName: Full=Translocon at the inner envelope membrane of chloroplasts 214; Short=AtTIC214 [Aethionema cordifolium]
+length: 1774
+e value: 4.5704
+gaps: 7
+identities: 28
+positives: 47
+score: 84.0
+DSTKQVFSKVLFKSNEHSDQLTREENTA--IRTPEHLIS-QKGFSYNVVNSSAFSGFSTASGKQVSILESSLHKV...
++STK++  K ++K+ E  D++T+++NT   I T + LIS +K  SY++ + S    F   S  QV    S+  K+...
+ESTKKILDKSIYKNEETEDKITKKKNTIYLISTIKKLISNKKKMSYDICSLSQAYVFYKLSQLQV----SNFSKL...

@@ -56,3 +56,5 @@ for blast_record in blast_records:
 			   print(hsp.query[0:75] + "...", file = f)
 			   print(hsp.match[0:75] + "...", file = f)
 			   print(hsp.sbjct[0:75] + "...", file = f)
+if os.path.exists("results.xml"):
+  os.remove("results.xml")
