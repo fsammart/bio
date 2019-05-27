@@ -42,13 +42,17 @@ Parametros:
 --local: indica que la consulta se realiza con una base de datos swissprot local
 --online: indica que la consulta se realiza online
 
-NOTA: Para correr en modo local, se debera bajar la base de datos de Swissprot a traves del siguiente link:
+Requisitos para correr en modo local
+
+- Para correr en modo local, se debera bajar la base de datos de Swissprot a traves del siguiente link:
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
 Descomprimir en el mismo directorio src/ del ejercicio y luego ejecutar:
 ```
  makeblastdb -in swissprot -dbtype prot
  ```
+- Bajar Blast del siguiente link e instalarlo:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
 
 Ejemplo:
 
@@ -72,7 +76,13 @@ Ejemplo:
 python src/ex3.py archivo.fasta alignment.out
 ```
 
-El comando anterior realiza un alineamiento multiple de las secuencias que se encuentren en archivo.fasta y deja el resultado en alignment.out
+El comando anterior realiza un alineamiento multiple de las secuencias que se encuentren en archivo.fasta y deja el resultado en alignment.out. 
+
+Requisitos:
+ - Bajar ClustalW del siguiente link: 
+ http://www.clustal.org/omega/ 
+ 
+ Seguir los pasos para su instalación
 
 
 
