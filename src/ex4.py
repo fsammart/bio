@@ -23,7 +23,7 @@ with open(file_path) as f:
     while True:
         next_n_lines = list(islice(f, BLAST_RESULT_SIZE))
         chunk = ''.join(next_n_lines)
-        if pattern in chunk:
+        if pattern.upper() in chunk.upper():
             with open(RESULT_FILE, "a") as out_handle:
                print(chunk, file=out_handle)
             full_accession = re.search(regex, next_n_lines[1]).group(0)
