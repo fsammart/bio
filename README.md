@@ -113,6 +113,11 @@ Requisitos:
  - Tener los archivo prosite.doc y prosite.dat dentro de un directorio llamado prosite, ubicado en el mismo directorio que el archivo ejecutable
 ftp://ftp.expasy.org/databases/prosite
 
+ # Autores:
+ Julián Palacci
+ Agustín Lavarello
+ Santiago Swinnen
+
  
  
 
