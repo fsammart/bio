@@ -92,6 +92,11 @@ python src/ex4.py [blast.out] pattern
 El comando anterior busca en el archivo blast.out, la salida del ejercicio 2, el pattern especificado. 
 Para cada hit encontrado que coincide con el pattern, busca en Uniprot el archivo fasta correspondiente.
 
+Ejemplo:
+
+python src/ex4.py blast.out MPIGS
+El comando anterior busca todos los hits en blast.out que contienen la secuencia de nucleotidos MPIGS
+
  # Ejercicio 5:
  
  ```
