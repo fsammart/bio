@@ -1,0 +1,94 @@
+########################################
+# Program: patmatmotifs
+# Rundate: Mon 24 Jun 2019 22:34:55
+# Commandline: patmatmotifs
+#    [-sequence] temp_fasta.fasta
+#    [-outfile] ../files/motifs.out
+# Report_format: dbmotif
+# Report_file: ../files/motifs.out
+########################################
+
+#=======================================
+#
+# Sequence: NM_000059.3     from: 1   to: 3418
+# HitCount: 7
+#
+# Full: No
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 4
+Start = position 3002 of sequence
+End = position 3005 of sequence
+
+Motif = AMIDATION
+
+YSLLTEGKRYRIYH
+     |  |
+  3002  3005
+
+Length = 4
+Start = position 2269 of sequence
+End = position 2272 of sequence
+
+Motif = AMIDATION
+
+LSNSRIGKRRGEPL
+     |  |
+  2269  2272
+
+Length = 4
+Start = position 1528 of sequence
+End = position 1531 of sequence
+
+Motif = AMIDATION
+
+GFHTASGKKVKIAK
+     |  |
+  1528  1531
+
+Length = 4
+Start = position 601 of sequence
+End = position 604 of sequence
+
+Motif = AMIDATION
+
+DETSYKGKKIPKDQ
+     |  |
+   601  604
+
+Length = 8
+Start = position 262 of sequence
+End = position 269 of sequence
+
+Motif = ATP_GTP_A
+
+NQREAASHGFGKTSGNSF
+     |      |
+   262      269
+
+Length = 8
+Start = position 2909 of sequence
+End = position 2916 of sequence
+
+Motif = TYR_PHOSPHO_SITE_2
+
+LYEAVKNAADPAYLEGYF
+     |      |
+  2909      2916
+
+Length = 8
+Start = position 2594 of sequence
+End = position 2601 of sequence
+
+Motif = TYR_PHOSPHO_SITE_2
+
+PSNDGKAGKEEFYRALCD
+     |      |
+  2594      2601
+
+
+#---------------------------------------
+#---------------------------------------
