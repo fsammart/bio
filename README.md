@@ -110,13 +110,13 @@ Nota:
 Es necesario correr el comando anterior con sudo para poder realizar correctamente el procesamiento de los archivos prosite
 
 Requisitos:
- - Tener los archivo prosite.doc y prosite.dat dentro de un directorio llamado prosite, ubicado en el mismo directorio que el archivo ejecutable
+ - Tener los archivo prosite.doc y prosite.dat dentro de un directorio llamado prosite, ubicado en el mismo directorio que el archivo ejecutable. Los archivos se pueden descargar del siguiente link:
 ftp://ftp.expasy.org/databases/prosite
 
  # Autores:
- Julián Palacci
- Agustín Lavarello
- Santiago Swinnen
+ - Julián Palacci
+ - Agustín Lavarello
+ - Santiago Swinnen
 
  
  
