@@ -83,6 +83,30 @@ Requisitos:
  http://www.clustal.org/omega/ 
  
  Seguir los pasos para su instalación
+ 
+ # Ejercicio 4:
+ 
+ ```
+python src/ex4.py [blast.out] pattern 
+```
+El comando anterior busca en el archivo blast.out, la salida del ejercicio 2, el pattern especificado. 
+
+ # Ejercicio 5:
+ 
+ ```
+python src/ex5.py [protein.fasta] [domain.out] [nucleotide.gbk] [orf.out] 
+```
+El comando anterior realiza un analisis de los dominios de la proteina [protein.fasta]. Deja el resultado en [domain.out]. A continuacion realiza el analisis de los ORF del archivo [nucleotide.gbk] y deja el resultado en [orf.out]
+
+Nota:
+Es necesario correr el comando anterior con sudo para poder realizar correctamente el procesamiento de los archivos prosite
+
+Requisitos:
+ - Tener los archivo prosite.doc y prosite.dat dentro de un directorio llamado prosite, ubicado en el mismo directorio que el archivo ejecutable
+ftp://ftp.expasy.org/databases/prosite
+
+ 
+ 
 
 
 
